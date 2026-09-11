@@ -1,6 +1,6 @@
 # Sistema de Gestión de Historia Clínica Electrónica
 
-Base de Datos - Unidad 1 - Ejercicio 3
+Base de Datos - Unidad 2 - Ejercicio 3
 
 ## Consigna
 Diseñar el esquema conceptual de base de datos para una clínica privada que centralice la información médica de sus pacientes mediante una historia clínica electrónica unificada, optimizando la asignación de turnos y evitando la pérdida de diagnósticos.
