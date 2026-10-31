@@ -30,3 +30,25 @@ Diseñar el esquema conceptual de base de datos para una clínica privada que ce
 
 ## Resultado
 <img width="832" height="1123" alt="BaseDeDatos-U1-Ej03-SistemaClinica" src="https://github.com/user-attachments/assets/830609b2-64c4-4e04-8638-025f4bc022f3" />
+
+---
+
+## Normalización
+
+Se normaliza el documento `Prescripciones` con sus registros de `Medicamentos_Prescripciones`. En todas las tablas la PK va en la primera columna y las FK al final. Los datos son de ejemplo.
+
+**Forma 0.** Una sola tabla con todo junto. Hay celdas con listas: cada prescripciones puede tener varios registros de medicamentos prescripciones.
+
+![Forma 0](normalizacion/00-forma-0.png)
+
+**1FN.** Cada elemento de la lista pasa a su propia fila y la clave queda compuesta: (`id_prescripcion`, `id_medicamento`).
+
+![1FN](normalizacion/01-1fn.png)
+
+**2FN.** Los datos de prescripciones dependen solo de `id_prescripcion` y los de medicamentos solo de `id_medicamento`. Se separan en `Prescripciones` y `Medicamentos`; `Medicamentos_Prescripciones` queda con la clave compuesta y lo que depende de ambos.
+
+![2FN](normalizacion/02-2fn.png)
+
+**3FN.** Los datos de `Turnos`, `Pacientes` y `Medicos` dependen de su propio identificador y no de la PK de prescripciones, así que pasan a tablas aparte. En el modelo final cada tabla usa su id propio.
+
+![3FN](normalizacion/03-3fn.png)
