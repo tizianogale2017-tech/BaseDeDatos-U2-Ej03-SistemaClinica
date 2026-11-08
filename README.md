@@ -29,7 +29,10 @@ Diseñar el esquema conceptual de base de datos para una clínica privada que ce
 - Se utilizó **número_historia_clinica** como identificador de pacientes en lugar de DNI para mantener compatibilidad con sistemas clínicos estándar.
 
 ## Resultado
-<img width="832" height="1123" alt="BaseDeDatos-U1-Ej03-SistemaClinica" src="https://github.com/user-attachments/assets/830609b2-64c4-4e04-8638-025f4bc022f3" />
+
+![Diagrama](captura.png)
+
+Atributos agregados para llegar al id más 5: `telefono` (Médicos), `area_medica` y `activa` (Especialidades), `fecha_emision` (Prescripciones) y `presentacion` (Medicamentos). Se sacó `codigo_medicamento` de Médicos porque ese vínculo ya sale de Turnos → Prescripciones → Medicamentos.
 
 ---
 
