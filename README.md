@@ -32,8 +32,6 @@ Diseñar el esquema conceptual de base de datos para una clínica privada que ce
 
 ![Diagrama](captura.png)
 
-Atributos agregados para llegar al id más 5: `telefono` (Médicos), `area_medica` y `activa` (Especialidades), `fecha_emision` (Prescripciones) y `presentacion` (Medicamentos). Se sacó `codigo_medicamento` de Médicos porque ese vínculo ya sale de Turnos → Prescripciones → Medicamentos.
-
 ---
 
 ## Normalización
